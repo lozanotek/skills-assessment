@@ -6,12 +6,11 @@ This repository contains all the instructions for a quick (+/- 60min) assessment
 The assessment will be updated as needed to keep up with changes in the .NET ecosystem.
 
 ## Instructions
-Please do the following:
+This is an open note, "open Google" assessment. If you run into any issues or have question, open an [issue](https://github.com/lozanotek/skills-assessment/issues). If you don't know how to do something or are stuck, just skip it. There's no harm in saying, *I don't know*. Time is too valuable to be stuck.
+
+To get started, please do the following:
 
 * Fork this repository to your GitHub ID
 * Switch to the `git-eval` branch, start the first activity
-* Each activity has the next steps
+* Each activity has self contained instructions and the next steps
 * Have fun!
-
-If you have a question, open an [issue!](https://github.com/lozanotek/skills-assessment/issues)
-
