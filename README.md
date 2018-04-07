@@ -14,3 +14,15 @@ To get started, please do the following:
 * Switch to the `git-eval` branch, start the first activity
 * Each activity has self contained instructions and the next steps
 * Have fun!
+## Activity 1 - Git Evaluation
+
+1. Create a new file called `self-assessment.md`
+2. For each of the items below, create a header section and write a small description about it.
+3. After you complete each section, commit the change.
+
+### Header Sections
+* **Development Experience** - What technologies do you know? What do you like about them?
+* **Git Commands** - What are your favorite git commands? Give a simple description for each.
+* **Continuing Education** - How do you learn new things? What interesting projects are you currently working on?
+
+Once you're done with these tasks, merge back into the `master` branch as a single commit. Go to the `fizz-buzz` branch for instructions on the next activity.
