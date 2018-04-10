@@ -9,7 +9,7 @@ The assessment will be updated as needed to keep up with changes in the .NET eco
 
 1. Create a new file called `self-assessment.md`
 2. For each of the items below, create a header section and write a small description about it.
-3. After you complete each section, commit the change.
+3. After you add a response for each section below, commit the change for that section.
 
 ### Header Sections
 * **Development Experience** - What technologies do you know? What do you like about them?
