@@ -21,7 +21,7 @@ Let's start with the following structure:
 3. Commit the changes.
 
 ### FizzLib
-The library must have the following:
+The library requires the following:
 
 1. A class called `FizzBuzz` that has a method called `GetFizzBuzz`.
 2. The `GetFizzBuzz` method is designed as:
@@ -32,11 +32,11 @@ The library must have the following:
    * Evaluate **Fizz** for multiples of 3
    * Evaluate **Buzz** for multiples of 5
    * Evaluate **FizzBuzz** for multiples of 3 and 5
-4. Must be flexible enough to accomodate for future expression evaluations. For example, anyone can easily add an evaluation like, **Foo** for multiples of 2, without changing the structure of the library.
+4. Extensible for future expression evaluation. For example, we can easily add an evaluation like, _**Foo** for multiples of 2_, without modifying the FizzBuzz class.
 5. Commit the changes
 
 ### FizzClient
-The console application (client) must have the following:
+The console application (client) requires the following:
 
 1. In the `Program` class, perform a run and print to the console the range values for:
    * min: 1, max: 100
