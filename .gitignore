@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/FizzClient/FizzLib/obj/Debug
+/src/FizzClient/FizzLib/bin/Debug
+/src/FizzClient/bin/Debug
+/src/FizzClient/obj/Debug
+/src/FizzClient/.vs/FizzClient/v15/Server/sqlite3/db.lock
+/src/FizzClient/packages
+/src/FizzClient/UnitTestProject/bin/Debug
+/src/FizzClient/UnitTestProject/obj/Debug
