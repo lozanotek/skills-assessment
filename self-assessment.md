@@ -18,3 +18,12 @@
   - Keeps me in line for what I'm doing and which commands I need to run next, it also tells me which branch I'm on
 - git checkout --track -b <local branch> <remote>/<tracked branch>
   - Creates a local branch from a remote branch and set's up the tracking at the same time so git push works
+## Continuing Education
+- Education
+  - I learn new things by doing.  Working through examples, following tutorials hands-on, getting thrown into something I know nothing about and just getting it done
+  - I have attended .Net user group meetings, JS user group meetings and local conferences but my kids take up all of that time I used to have
+- Interesting Projects (It says current - I have nothing current because my kids athletic activities take my time)
+  - I have participated in multiple startup weekend events (and won - woohoo) and a charity hackathon, these events are always interesting
+  - My previous employer had me working on a device that could plug into tractors and we'd use that data to help drive crop insurance decisions - it was short lived since we were bought out
+  - Twice a year, I come up with small tech projects to help simulate a working environment for college grads.  My last one was an Angular/web api setup in June 2018
+  - I recently finished a PHP project for a small company that helps construction workers place customizations on floor plans, keeps track of materials, pricing, sub contractors on multi-tenant housing
