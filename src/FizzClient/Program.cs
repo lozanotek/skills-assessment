@@ -10,7 +10,7 @@ namespace FizzClient
 
         //resharper does not like all caps variables, even for constants - I did not have an issue running in increments of 10000... 
         //...but could reduce if out of memory error's occur
-        private const int MaxIteration = 1000;
+        private const int MaxIteration = 10000;
 
         static void Main(string[] args)
         {
@@ -32,7 +32,7 @@ namespace FizzClient
             }
             catch (Exception ex)
             {
-                //since there is a try/catch in the FizzBuzz class, this would be an exception for something that has happened at the program level
+                //allowing all exceptions to bubble up to here...
 
                 //would never display technical details back to the user, keeping here for my testing purposes
                 Console.WriteLine("Something bad happened!  Here are the technical details: " + ex.Message);
@@ -41,24 +41,46 @@ namespace FizzClient
 
         private static void Run(int min, int max)
         {
+            //started with recursion for the sake of demonstrating I know how it works... however, it leads to out of memory problems every time...
+            //...normally I would not check in commented out code, but chose to keep it here as a painful memory, haha!
+
+            //var start = min;
+
+            ////do not want to exceed the max value but need to run incrementally to avoid out of memory errors
+            //var end = start + MaxIteration < max ? start + MaxIteration : max;
+
+            //var results = FizzBuzz.GetFizzBuzz(start, end);
+
+            //Print(results);
+
+            //if (end < max)
+            //{
+            //    //setup our next incremental run
+            //    end++;
+
+            //    //recursively call run until we have reached the max value - could have also performed a loop
+            //    Run(end, max);
+            //}
+
             var start = min;
 
             //do not want to exceed the max value but need to run incrementally to avoid out of memory errors
             var end = start + MaxIteration < max ? start + MaxIteration : max;
 
-            var results = FizzBuzz.GetFizzBuzz(start, end);
-
-            Print(results);
-
-            if (end < max)
+            while (end <= max)
             {
+                var results = FizzBuzz.GetFizzBuzz(start, end);
+
+                Print(results);
+
+                //adding 1 to int.MaxValue will cause it to go to int.MinValue, we do not want that or we'll end up in an infinite loop!
+                if (end == max) break;
+
                 //setup our next incremental run
                 end++;
-
-                //recursively call run until we have reached the max value - could have also performed a loop
-                Run(end, max);
+                start = end;
+                end = start + MaxIteration < max ? start + MaxIteration : max;
             }
-
         }
 
         private static void Print(IDictionary<int, string> results)

@@ -15,35 +15,26 @@ namespace FizzLib
         {
             var dictionary = new Dictionary<int, string>();
 
-            try
+            //using a long because x++ will increment beyond int.MaxValue causing x to rollover to int.MinValue
+            for (long x = min; x <= max; x++)
             {
-                for (var x = min; x <= max; x++)
+                var resultString = string.Empty;
+
+                // mod 15 is equivalent to numbers that are multiples of both 3 and 5
+                if (x % 15 == 0)
                 {
-                    var resultString = string.Empty;
-
-                    // mod 15 is equivalent to numbers that are multiples of both 3 and 5
-                    if (x % 15 == 0)
-                    {
-                        resultString = Fzzbzz;
-                    }
-                    else if (x % 3 == 0)
-                    {
-                        resultString = Fzz;
-                    }
-                    else if (x % 5 == 0)
-                    {
-                        resultString = Bzz;
-                    }
-
-                    dictionary.Add(x, resultString);
+                    resultString = Fzzbzz;
                 }
-            }
-            catch (Exception ex)
-            {
-                //log the exception - in real life - since I'm not actually using the variable, resharper throws a compiler warning - I could turn that off
+                else if (x % 3 == 0)
+                {
+                    resultString = Fzz;
+                }
+                else if (x % 5 == 0)
+                {
+                    resultString = Bzz;
+                }
 
-                //I could bubble up the exception - or not catch it here at all and let it bubble up depending on the pattern the team follows
-                dictionary.Clear();
+                dictionary.Add((int)x, resultString);
             }
 
             return dictionary;
