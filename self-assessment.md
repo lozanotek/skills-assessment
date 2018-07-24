@@ -16,5 +16,10 @@
   - I have worked with ASP.NET, HTML5, MVC, MVVM, Ajax, JQuerey, JSon, and Razor just to name a few technologies.
   - I love being able to put together a page and make it work from load to save.
 ## Git Commands
-
+- git status
+  - I like this command because it allows me to see what files I have staged and which files need to bee added for a commit.
+- git commit -a -m "<comment>"
+  - I like this command because it allows me to add tracked files, add a comment, and then commit all in one line.
+- git push --set-upstream (or --unset-upstream) origin <branch>
+  - This command allows you to set or unset your remote branch as well as create the remote branch if it doesn't already exist with the --set-upstream.
 ## Continuing Education
