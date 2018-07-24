@@ -23,3 +23,6 @@
 - git push --set-upstream (or --unset-upstream) origin <branch>
   - This command allows you to set or unset your remote branch as well as create the remote branch if it doesn't already exist with the --set-upstream.
 ## Continuing Education
+- Being the father of 3 children it is hard to find time to continue education on a regular basis
+- I have always learned the most on the job. No company does the same thing the same way. I have found it beneficial though to learn different ways of doing things throughout the years because there is not just one way to accomplish developement goals.
+- When I do have the time, I do like to do online tutorials. That gives me the base knowledge of what I am trying to learn. After that, trial by fire and Google help me learn and further my skills.
