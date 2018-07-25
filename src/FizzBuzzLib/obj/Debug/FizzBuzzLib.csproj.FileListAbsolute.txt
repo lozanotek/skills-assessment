@@ -1,0 +1,4 @@
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzLib\bin\Debug\FizzBuzzLib.dll
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzLib\bin\Debug\FizzBuzzLib.pdb
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzLib\obj\Debug\FizzBuzzLib.dll
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzLib\obj\Debug\FizzBuzzLib.pdb

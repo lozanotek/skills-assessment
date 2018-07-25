@@ -1,0 +1,8 @@
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\obj\Debug\FizzBuzzClient.csprojResolveAssemblyReference.cache
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\bin\Debug\FizzBuzzClient.exe.config
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\bin\Debug\FizzBuzzClient.exe
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\bin\Debug\FizzBuzzClient.pdb
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\bin\Debug\FizzBuzzLib.dll
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\bin\Debug\FizzBuzzLib.pdb
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\obj\Debug\FizzBuzzClient.exe
+C:\Users\Shawn\Source\Repos\skills-assessment\src\FizzBuzzClient\obj\Debug\FizzBuzzClient.pdb
