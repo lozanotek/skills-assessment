@@ -8,13 +8,11 @@ namespace FizzBuzzLib
 {
     public class FizzBuzz
     {
-        public IDictionary<int, string> GetFizzBuzz(IDictionary<int, string> evalList, int minVal = 1, int maxVal = 100)
-        {
-            
+        public static IDictionary<int, string> GetFizzBuzz(IDictionary<int, string> evalList, int minVal = 1, int maxVal = 100)
+        {            
             var fizzBuzzResult = new Dictionary<int, string>();
 
-            // Adding a default setting but making it...
-            // Extensible for future expression evaluation. For example, we can easily add an evaluation like, Foo for multiples of 2, without modifying the FizzBuzz class.
+            // Adding a default setting 
             if (evalList == null || evalList.Count == default(int))
             {
                 evalList = new Dictionary<int, string>();
@@ -22,7 +20,7 @@ namespace FizzBuzzLib
                 evalList.Add(5, "Buzz");
             }
 
-            for(var i = minVal; i <= maxVal; i++)
+            for(int i = minVal; i <= maxVal; i++)
             {
                 var evalResult = string.Empty;
                 foreach (var item in evalList)
@@ -30,13 +28,13 @@ namespace FizzBuzzLib
                     evalResult += EvaluateNumber(i, item.Key, item.Value);
                 }
 
-                fizzBuzzResult.Add(i, evalResult);
+                fizzBuzzResult.Add(i, evalResult == string.Empty ? i.ToString() : evalResult);
             }
 
             return fizzBuzzResult;
         }
 
-        private string EvaluateNumber(int value, int evalNumber, string message)
+        private static string EvaluateNumber(int value, int evalNumber, string message)
         {
             var evalResult = value % evalNumber == 0 ? message : "";
 
