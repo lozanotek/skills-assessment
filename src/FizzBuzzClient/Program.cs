@@ -30,6 +30,7 @@ namespace FizzBuzzClient
 
         private static void ExecuteRange(int minVal, int maxVal)
         {
+            // Creating blocks of runs to prevent Out of Memory errors.
             var start = minVal;
             var end = minVal >= 0 && maxVal <= Int32.MaxValue && maxVal <= RunLimit
                 ? maxVal
