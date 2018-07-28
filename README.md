@@ -1,5 +1,5 @@
 ![alt text](http://lozanotek.com/images/logo.gif "Created by Lozanotek, Inc.") 
-# Skills Assessment for Consultants
+# .NET Skills Assessment
 
 This repository contains all the instructions for a quick (+/- 60min) assessment of skills. The purpose of the assessment is to serve as a simple baseline to help evaluate the skills a .NET developer should have.
 
