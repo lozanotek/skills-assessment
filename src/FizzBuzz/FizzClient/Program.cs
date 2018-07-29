@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FizzClient
+﻿namespace FizzClient
 {
-    class Program
+    using FizzLib;
+
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            var fizzBuzz = new FizzBuzz();
+
+            fizzBuzz.GetFizzBuzz();
+            fizzBuzz.GetFizzBuzz(1, int.MaxValue);
+            fizzBuzz.GetFizzBuzz(int.MinValue, int.MaxValue);
         }
     }
 }

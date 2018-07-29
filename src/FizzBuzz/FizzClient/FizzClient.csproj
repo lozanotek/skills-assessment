@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FizzLib\FizzLib.csproj">
+      <Project>{ed61693f-6aa4-4146-8a4b-8b5b0e056bf2}</Project>
+      <Name>FizzLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
