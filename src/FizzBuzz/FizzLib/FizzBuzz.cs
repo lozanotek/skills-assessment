@@ -9,8 +9,10 @@
         public List<Tuple<int, string>> ExpressionEvaluation { get; set; } =
             new List<Tuple<int, string>> { new Tuple<int, string>(3, "Fizz"), new Tuple<int, string>(5, "Buzz") };
 
-        public void GetFizzBuzz(int min = 1, int max = 100)
+        public IEnumerable<string> GetFizzBuzz(int min = 1, int max = 100)
         {
+            var result = new List<string>();
+
             for (int i = min; i <= max; i++)
             {
                 List<Tuple<int, string>> matchingExpressionEvaluation =
@@ -18,11 +20,11 @@
 
                 if (matchingExpressionEvaluation.Any())
                 {
-                    Console.WriteLine(string.Join("", matchingExpressionEvaluation.Select(c => c.Item2)));
+                    result.Add(string.Join("", matchingExpressionEvaluation.Select(c => c.Item2)));
                 }
             }
 
-            Console.ReadLine();
+            return result.AsEnumerable();
         }
     }
 }
