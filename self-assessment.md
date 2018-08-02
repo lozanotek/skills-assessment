@@ -51,11 +51,11 @@ The following are the three sections outlined in the instructions:
 * Lead Generation - Getting users to provide their contact information is the biggest hurdle in online sales. With SEO and Land Page Optimization, you can identify conversion rates, testing, and identify what's working and not.
 
 ## Git Commands
-git status  - gotta see what's dirty
-git add .	- I like the add all command
-git commit  - commit early and often
-git pull	- fingers crossed there are no conflicts
-git push    - ahh, task complete
+* git status  - gotta see what's dirty
+* git add .	- I like the add all command
+* git commit  - commit early and often
+* git pull	- fingers crossed there are no conflicts
+* git push    - ahh, task complete
 
 
 
