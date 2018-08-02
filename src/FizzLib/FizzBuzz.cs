@@ -17,7 +17,7 @@ namespace FizzLib
 
         public IEnumerable<string> GetFizzBuzz(IDictionary<int, string> displayValues, int min = 1, int max = 100)
         {
-            var list = Enumerable.Range(1, 100)
+            var list = Enumerable.Range(min, max)
                 .Select(n => {
                     foreach(int i in displayValues.Keys.OrderByDescending(key => key))
                     {
