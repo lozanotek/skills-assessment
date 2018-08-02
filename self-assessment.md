@@ -22,11 +22,17 @@ The following are the three sections outlined in the instructions:
 
 * SQL Server - I'm comfortable designing and reading SQL server databases.
 
+* MySQL - Getting really comfortable with it for WordPress and my current project.
+
+* MongoDB - Experience with it during Udemy.com courses that had MongoDB backends.
+
 * Stored procedures - Is there a better place to hide logic? Just kidding, but a really powerful database tool.
 
 * Git - I use it at work and on my home projects. Nothing too fancy.
 
 * TFS - I've used this version control system professionally on several gigs.
+
+* Android - I've completed an Android course with about 20 different projects in it. Nothing professional or paid.
 
 * WordPress - Like most developers, I didn't give it the time of day. I read an article that got me interested in it. I took some online courses on it and have some locally developed WordPress sites. 
 
@@ -91,4 +97,3 @@ Fairly recently, I started picking up new skills through Udemy.com. Here are som
 * Trading Inside Bars - Master 1 Easy Pattern to Be Successful
 * An Entire MBA in 1 Course
 * Outsource your idea | Launch your business for 1/4 the price
-
