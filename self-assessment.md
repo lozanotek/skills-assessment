@@ -4,91 +4,51 @@ The following are the three sections outlined in the instructions:
 
 ## Development Experience
 
-### DuPont Pioneer - Full Stack Developer
-The Connex project provides a combination of CRM and Point-of-Sale for the company's seed lines. My role as a daily full-stack developer is to work with the team to complete stories.
-#### Skills and Frequency
-* C# RESTful API - daily
-* AngularJS  - daily
-* Typescript - daily
-* JavaScript - daily
-* HTML - daily
-* CSS - daily
-* Angular Material - light daily
-* Git - daily
-* TFS - used to be daily
-* SQL Server 2016 - daily
-* Stored Procedures - daily
-* Database Design - every sprint
-* Agile Scrum - daily
+*C# - Very comfortable with C# developing anything from Web API, MVC, to command line.
 
-### Decision Research Corporation
-A contract company located in Hawaii that I subcontracted through a local firm. DRC had an insurance client on the East Coast that acquired another company and needed to export that data to their mainframe system. My role was converting data into a file layout that the current system expected.
-#### Skills and Frequency
-* C# - daily
-* Git - daily
-* SQL Server 2012 - daily
-* Stored Procedures - daily
-* XSLT - daily
-* Remote Development - daily
-* On-site as needed
+*RESTful API - Comfortable creating API's
 
-### Heartland Crop Insurance
-A crop insurance company in Topeka, KS, that was trying to ramp up development on their new policy system. I was part of a remote team they established in West Des Moines, IA. We completed four units of functionality for them including Compliance, Crop Hail, Crop Hail Accounts Payable, and Crop Hail Claims.
-#### Skills and Frequency
-* C# - daily
-* WPF - daily
-* WCF - some
-* NHibernate - daily
-* RESTful API - close to daily
-* SQL Server 2012 - daily
-* TFS - daily
-* Remote Development - daily
-* On-site as needed
+*HTML - I'm comfortable designing UI's to optimize the user experience or generate action.
 
-### Farmer's Mutual Hail Insurance
-A crop insurance company in West Des Moines, IA, that was developing a new policy system from the ground up. I was part of the policy team, and later the financials team.
-#### Skills and Frequency
-* C# - daily
-* Web Forms - moderate
-* JavaScript - moderate
-* Spring .NET
-* SQL Server 2008 - daily
-* TFS - daily
-* On-site - daily
+*Bootstrap - Love the ease of using Bootstrap
 
+*AngularJS - Ugh...prefer not to work in this.
 
-### State of Iowa
-I worked for the Department of Administrative Services - Iowa Technology Enterprise (DAS-ITE). This department acted as an IT consulting shop for other State of Iowa departments. I worked on five ground up projects and maintained multiple others. The team developed an internal MVC framework before Microsoft's version of MVC was released. Later we switched to ASP.NET MVC 1.1. 
-#### Skills and Frequency
-* C# - daily
-* MVC - daily
-* JavaScript - daily
-* JQuery - daily
-* NHibernate - daily
-* SQL Server 2005/2008 - daily
-* CVS/Subversion/Git - daily
-* On-site - most days
-* Remote - as needed
+*Angular - Love working with this. I'm working on a project for myself that I am using Angular and Bootstrap. Learning a lot!
 
-### Wells Fargo - Merchant Payment Solutions
-The Merchant Payment Solutions division of Wells Fargo provided merchant accounts for their entire business account client base. 
-#### Skills and Frequency
-* Classic ASP - daily
-* VB 6 - daily
-* SQL Server 2000 - daily
-* On-site - most days
-* Remote - as needed
+*JavaScript - I'm comfortable creating a Node.JS API to Angular 5 application. Experience with JQuery, AngularJS, and Angular 5.
 
+*Typescript - I like this for strongly typing the JavaScript. It provides structure and yells at you when something is wrong.
 
-### CSI Services
-CSI Services provided a retail inventory control system to soft good merchants (sized items of similar SKU's) like shoe and clothing stores.
-#### Skills and Frequency
-* VB 6 - daily
-* Access DB - daily
-* SQL Server 2000 - later
-* VB .NET
-* On-site - most days
+*SQL Server - I'm comfortable designing and reading SQL server databases.
 
+*Stored procedures - Is there a better place to hide logic? Just kidding, but a really powerful database tool.
+
+*Git - I use it at work and on my home projects. Nothing too fancy.
+
+*TFS - I've used this version control system professionally on several gigs.
+
+*WordPress - Like most developers, I didn't give it the time of day. I read an article that got me interested in it. I took some online courses on it and have some locally developed WordPress sites. 
+
+*PHP - Using WordPress, I've become a novice PHP developer.
+
+*Python - I recently setup a web scraper. I Fiverr'ed the scraping but have to maintain them. I then added them to Heroku and setup my own Python clock script with a couple of crons that run the scrapers. I'm also getting into machine learning with TensorFlow. I will also use PyTorch, but TensorFlow first.
+
+*Heroku - I have been hosting for a long time on other sites. I'm putting a site up that I'm not sure what it's usage will be so I want it to be scalable. In the Angular course I'm taking, the instructor demonstrated several cloud hosting options. Heroku was one of them.
+
+*IIS - Fairly comfortable debugging/investigating IIS issues.
+
+*Debugging - Solving problems is so much easier when you know your tools and are able to step through problems. Of course, you can't beat the stand by, logging.
+
+*Machine Learning and TensorFlow - I am so new to this, but I find it so fascinating. I just completed the building of a dataset for MLB money lines and I'm going to try to setup a project to help predict results.
+
+*VB 6 - Oh hell no! Well, what's the rate?
+
+*SEO - Online course to improve SEO. Implementing as I go on my WordPress and EdgeBettor sites.
+
+*Landing Page Optimization - The psychology behind UI/UX is amazing. I'm implementing this in my WordPress and EdgeBettor sites.
+
+*Lead Generation - Getting users to provide their contact information is the biggest hurdle in online sales. With SEO and Land Page Optimization, you can identify conversion rates, testing, and identify what's working and not.
 
 ## Git Commands
 git status  - gotta see what's dirty
