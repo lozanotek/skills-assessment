@@ -1,0 +1,10 @@
+C:\a\eval\skills-assessment\src\FizzClient\bin\Debug\FizzClient.exe.config
+C:\a\eval\skills-assessment\src\FizzClient\bin\Debug\FizzClient.exe
+C:\a\eval\skills-assessment\src\FizzClient\bin\Debug\FizzClient.pdb
+C:\a\eval\skills-assessment\src\FizzClient\bin\Debug\FizzLib.dll
+C:\a\eval\skills-assessment\src\FizzClient\bin\Debug\FizzLib.pdb
+C:\a\eval\skills-assessment\src\FizzClient\obj\Debug\FizzClient.csprojAssemblyReference.cache
+C:\a\eval\skills-assessment\src\FizzClient\obj\Debug\FizzClient.csproj.CoreCompileInputs.cache
+C:\a\eval\skills-assessment\src\FizzClient\obj\Debug\FizzClient.csproj.CopyComplete
+C:\a\eval\skills-assessment\src\FizzClient\obj\Debug\FizzClient.exe
+C:\a\eval\skills-assessment\src\FizzClient\obj\Debug\FizzClient.pdb
