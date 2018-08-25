@@ -1,0 +1,5 @@
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/bin/Debug/FizzLib.dll
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/bin/Debug/FizzLib.pdb
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/obj/Debug/FizzLib.csproj.CoreCompileInputs.cache
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/obj/Debug/FizzLib.dll
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/obj/Debug/FizzLib.pdb

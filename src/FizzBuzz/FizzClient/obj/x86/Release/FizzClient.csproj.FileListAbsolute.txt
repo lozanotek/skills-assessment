@@ -1,0 +1,6 @@
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/bin/Release/FizzClient.exe
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/bin/Release/FizzLib.dll
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/obj/x86/Release/FizzClient.csprojAssemblyReference.cache
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/obj/x86/Release/FizzClient.csproj.CoreCompileInputs.cache
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/obj/x86/Release/FizzClient.csproj.CopyComplete
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzClient/obj/x86/Release/FizzClient.exe
