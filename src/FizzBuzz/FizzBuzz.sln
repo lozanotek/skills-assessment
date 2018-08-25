@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzClient", "FizzClient\FizzClient.csproj", "{4B2566CA-6BB6-4ACF-B7C2-4405222E387D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzLib", "FizzLib\FizzLib.csproj", "{236524AA-FC77-47B8-9814-8BAFF7C05F8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B2566CA-6BB6-4ACF-B7C2-4405222E387D}.Debug|x86.ActiveCfg = Debug|x86
+		{4B2566CA-6BB6-4ACF-B7C2-4405222E387D}.Debug|x86.Build.0 = Debug|x86
+		{4B2566CA-6BB6-4ACF-B7C2-4405222E387D}.Release|x86.ActiveCfg = Release|x86
+		{4B2566CA-6BB6-4ACF-B7C2-4405222E387D}.Release|x86.Build.0 = Release|x86
+		{236524AA-FC77-47B8-9814-8BAFF7C05F8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{236524AA-FC77-47B8-9814-8BAFF7C05F8F}.Debug|x86.Build.0 = Debug|Any CPU
+		{236524AA-FC77-47B8-9814-8BAFF7C05F8F}.Release|x86.ActiveCfg = Release|Any CPU
+		{236524AA-FC77-47B8-9814-8BAFF7C05F8F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

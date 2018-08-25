@@ -1,0 +1,3 @@
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/bin/Release/FizzLib.dll
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/obj/Release/FizzLib.csproj.CoreCompileInputs.cache
+/Users/user/Documents/Code/repos/skills-assessment/src/FizzBuzz/FizzLib/obj/Release/FizzLib.dll
