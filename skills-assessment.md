@@ -33,3 +33,9 @@ I have three git commands that are my favorite when used together.
 2. `git add .` This adds and tracks all files
 3. `git commit -m "remove untracked files"` This commits the changes to source control
 I use these three commands together when unnecessary files accidentally get added to source control. For example, the `.gitignore` template for Visual Studio does not ignore `.DS_Store` files by default. When working on a Mac, it is easy to commit these files by mistake. After a file has been committed, you can update the `.gitignore`, but the file is already being tracked. To remove the file, you will have to use the above three commands to remove all cached files and then add everything back before committing. Any changes to the `.gitignore` file will take effect once all files are removed from tracking. 
+
+## Continuing Education
+### How do you learn new things? What interesting projects are you currently working on?
+I am a hands-on learner and I learn best by doing or following along with tutorials. I use Pluralsight for introductions to new technologies or concepts. I have also used Lynda.com in the past. 
+
+An interesting project I am currently working on is a RESTful API written in Kotlin with the Spring Framework. This is particularly interesting because of the new technologies and the rapid change of both. Since both technologies are rather new, there is limited documentation and resources available online. This forces us to gain a deeper understanding and dig into the source control to solve problems and debug our application.
