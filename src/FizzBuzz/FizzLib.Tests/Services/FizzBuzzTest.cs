@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Bogus;
 using FizzLib.Services;
-using FizzLib.Wrappers;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 
 namespace FizzLib.Tests.Services
 {
@@ -12,76 +12,73 @@ namespace FizzLib.Tests.Services
     public class FizzBuzzTest
     {
         private IFizzBuzz _fizzBuzz;
-        private Mock<IConsoleWrapper> _consoleMock;
         private Randomizer _random;
+
         [TestInitialize]
         public void BeforeEach()
         {
             _random = new Randomizer();
 
-            _consoleMock = new Mock<IConsoleWrapper>();
-
-            _fizzBuzz = new FizzBuzz(_consoleMock.Object);
+            _fizzBuzz = new FizzBuzz();
         }
 
         [TestClass]
         public class GetFizzBuzzTest : FizzBuzzTest
         {
             [TestMethod]
-            public void ShouldWriteMinAndMaxValuesToConsole()
-            {
-                var expectedMin = _random.Number(100);
-                var expectedMax = expectedMin + _random.Number(100);
-
-                _fizzBuzz.GetFizzBuzz(expectedMin, expectedMax);
-
-                _consoleMock.Verify(con => con.WriteLine($"min: {expectedMin}, max: {expectedMax}"));
-            }
-
-            [TestMethod]
-            public void ShouldWriteToConsoleForEveryNumberInRangeInclusivePlusOneForRangeValues()
+            public void ShouldReturnOutputForEveryNumberInRangeInclusive()
             {
                 var expectedMin = _random.Number(1, 100);
                 var expectedMax = expectedMin + _random.Number(1, 100);
-                var expectedCallCount = expectedMax - expectedMin + 2;
+                var expectedCount = expectedMax - expectedMin + 1;
 
-                _fizzBuzz.GetFizzBuzz(expectedMin, expectedMax);
+                var actualCount = _fizzBuzz.GetFizzBuzz(expectedMin, expectedMax).Count();
 
-                _consoleMock.Verify(con => con.WriteLine(It.IsAny<object>()), Times.Exactly(expectedCallCount));
+                actualCount.Should().Be(expectedCount);
             }
 
             [TestMethod]
-            public void ShouldWriteFizzWhenNumberIsDivisibleByThree()
+            public void ShouldReturnFizzWhenNumberIsDivisibleByThree()
             {
                 var expectedNumber = _random.Number(1, 10) * 3;
 
-                _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber);
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber).First();
 
-                _consoleMock.Verify(con => con.WriteLine(It.Is<string>(value => value.Contains("Fizz"))));
+                actualOutput.Should().Contain("Fizz");
             }
 
             [TestMethod]
-            public void ShouldWriteBuzzWhenNumberIsDivisibleByFive()
+            public void ShouldReturnBuzzWhenNumberIsDivisibleByFive()
             {
                 var expectedNumber = _random.Number(1, 10) * 5;
 
-                _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber);
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber).First();
 
-                _consoleMock.Verify(con => con.WriteLine(It.Is<string>(value => value.Contains("Buzz"))));
+                actualOutput.Should().Contain("Buzz");
             }
 
             [TestMethod]
-            public void ShouldWriteFizzBuzzWhenNumberIsDivisibleByThreeAndFive()
+            public void ShouldReturnFizzBuzzWhenNumberIsDivisibleByThreeAndFive()
             {
                 var expectedNumber = _random.Number(1, 10) * 3 * 5;
 
-                _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber);
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber).First();
 
-                _consoleMock.Verify(con => con.WriteLine("FizzBuzz"));
+                actualOutput.Should().Be("FizzBuzz");
             }
 
             [TestMethod]
-            public void ShouldWriteValueForAnyCustomRulesPassedIn()
+            public void ShouldReturnIntegerValueWhenNumberIsNotDivisibleByAnyKey()
+            {
+                var expectedNumber = (_random.Number(1, 10) * 3 * 5) + 1;
+
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedNumber, expectedNumber).First();
+
+                actualOutput.Should().Be(expectedNumber.ToString());
+            }
+
+            [TestMethod]
+            public void ShouldReturnValueForAnyCustomRulesPassedIn()
             {
                 var expectedKey1 = _random.Number(1, 10);
                 var expectedKey2 = expectedKey1 + _random.Number(1, 10);
@@ -92,9 +89,9 @@ namespace FizzLib.Tests.Services
                     [expectedKey2] = _random.String2(_random.Number(1, 10))
                 };
 
-                _fizzBuzz.GetFizzBuzz(expectedMinMax, expectedMinMax, expectedRules);
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedMinMax, expectedMinMax, expectedRules).First();
 
-                _consoleMock.Verify(con => con.WriteLine(It.Is<string>(value => value.Contains(expectedRules[expectedKey1] + expectedRules[expectedKey2]))));
+                actualOutput.Should().Contain(expectedRules[expectedKey1] + expectedRules[expectedKey2]);
             }
 
             [TestMethod]
@@ -111,9 +108,9 @@ namespace FizzLib.Tests.Services
             [TestMethod]
             public void ShouldReturnAfterMaxIntegerValueIsFizzBuzzed()
             {
-                _fizzBuzz.GetFizzBuzz(int.MaxValue, int.MaxValue);
+                var actualCount = _fizzBuzz.GetFizzBuzz(int.MaxValue, int.MaxValue).Count();
 
-                _consoleMock.Verify(con => con.WriteLine(It.IsAny<object>()), Times.Exactly(2));
+                actualCount.Should().Be(1);
             }
 
             [TestMethod]
@@ -122,7 +119,7 @@ namespace FizzLib.Tests.Services
             {
                 var expectedMin = _random.Number(100);
 
-                _fizzBuzz.GetFizzBuzz(expectedMin, expectedMin - 1);
+                _fizzBuzz.GetFizzBuzz(expectedMin, expectedMin - 1).ToList();
             }
         }
     }

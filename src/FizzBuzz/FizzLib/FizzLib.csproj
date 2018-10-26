@@ -44,8 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FizzBuzz.cs" />
     <Compile Include="Services\IFizzBuzz.cs" />
-    <Compile Include="Wrappers\ConsoleWrapper.cs" />
-    <Compile Include="Wrappers\IConsoleWrapper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

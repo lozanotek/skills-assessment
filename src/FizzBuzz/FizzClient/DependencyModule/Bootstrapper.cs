@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using FizzLib.Services;
-using FizzLib.Wrappers;
 
 namespace FizzClient.DependencyModule
 {
@@ -12,8 +11,6 @@ namespace FizzClient.DependencyModule
 
             builder.RegisterType<FizzBuzz>()
                 .As<IFizzBuzz>();
-            builder.RegisterType<ConsoleWrapper>()
-                .As<IConsoleWrapper>();
 
             return builder.Build();
         }
