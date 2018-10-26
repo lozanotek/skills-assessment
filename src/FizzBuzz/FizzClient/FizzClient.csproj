@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FizzLib\FizzLib.csproj">
-      <Project>{BD945C49-F195-41C8-9102-6B8828A8E6E4}</Project>
+      <Project>{bd945c49-f195-41c8-9102-6b8828a8e6e4}</Project>
       <Name>FizzLib</Name>
     </ProjectReference>
   </ItemGroup>
