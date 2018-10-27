@@ -1,29 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using FizzLib.Models;
 
 namespace FizzLib.Services
 {
     public class FizzBuzz : IFizzBuzz
     {
-        public IEnumerable<string> GetFizzBuzz(int min = 1, int max = 100, Dictionary<int, string> additionalRules = null)
+        private readonly DivisorReplacement _fizzReplacement = new DivisorReplacement
+        {
+            Divisor = 3,
+            ReplaceWith = "Fizz"
+        };
+        private readonly DivisorReplacement _buzzReplacement = new DivisorReplacement
+        {
+            Divisor = 5,
+            ReplaceWith = "Buzz"
+        };
+
+        public IEnumerable<string> GetFizzBuzz(int min = 1, int max = 100, List<DivisorReplacement> replacements = null)
         {
             if (max < min)
                 throw new ArgumentException("max must be greater than or equal to min");
 
-            additionalRules = additionalRules ?? new Dictionary<int, string>();
+            replacements = replacements ?? new List<DivisorReplacement>();
+            if (replacements.FirstOrDefault(x => x.Divisor == 3) == null)
+                replacements.Add(_fizzReplacement);
+            if (replacements.FirstOrDefault(x => x.Divisor == 5) == null)
+                replacements.Add(_buzzReplacement);
 
             for (long i = min; i <= max; i++)
             {
-                var output = "";
-                if (i % 3 == 0) output += "Fizz";
-                if (i % 5 == 0) output += "Buzz";
+                var result = string.Join("", replacements
+                    .Where(x => x.Divisor != 0 && i % x.Divisor == 0)
+                    .Select(x => x.ReplaceWith)
+                    .ToList());
 
-                foreach (var keyValuePair in additionalRules)
-                {
-                    if (keyValuePair.Key != 0 && i % keyValuePair.Key == 0) output += keyValuePair.Value;
-                }
-
-                yield return string.IsNullOrEmpty(output) ? i.ToString() : output;
+                yield return string.IsNullOrEmpty(result) ? i.ToString() : result;
             }
         }
     }

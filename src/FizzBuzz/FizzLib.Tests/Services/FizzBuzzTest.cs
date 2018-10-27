@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Bogus;
+using FizzLib.Models;
 using FizzLib.Services;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -80,29 +81,33 @@ namespace FizzLib.Tests.Services
             [TestMethod]
             public void ShouldReturnValueForAnyCustomRulesPassedIn()
             {
-                var expectedKey1 = _random.Number(1, 10);
-                var expectedKey2 = expectedKey1 + _random.Number(1, 10);
-                var expectedMinMax = expectedKey1 * expectedKey2;
-                var expectedRules = new Dictionary<int, string>
+                var expectedReplacement1 = new DivisorReplacement
                 {
-                    [expectedKey1] = _random.String2(_random.Number(1, 10)),
-                    [expectedKey2] = _random.String2(_random.Number(1, 10))
+                    Divisor = _random.Number(1, 10),
+                    ReplaceWith = _random.String2(_random.Number(1, 10))
                 };
+                var expectedReplacement2 = new DivisorReplacement
+                {
+                    Divisor = expectedReplacement1.Divisor + 1,
+                    ReplaceWith = _random.String2(_random.Number(1, 10))
+                };
+                var expectedMinMax = expectedReplacement1.Divisor * expectedReplacement2.Divisor;
+                var expectedReplacements = new List<DivisorReplacement> { expectedReplacement1, expectedReplacement2 };
 
-                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedMinMax, expectedMinMax, expectedRules).First();
+                var actualOutput = _fizzBuzz.GetFizzBuzz(expectedMinMax, expectedMinMax, expectedReplacements).First();
 
-                actualOutput.Should().Contain(expectedRules[expectedKey1] + expectedRules[expectedKey2]);
+                actualOutput.Should().Contain(expectedReplacement1.ReplaceWith + expectedReplacement2.ReplaceWith);
             }
 
             [TestMethod]
             public void ShouldNotTryToDivideByZeroIfCustomRuleIsPassedInWithZeroAsKey()
             {
-                var expectedRules = new Dictionary<int, string>
+                var expectedReplacements = new List<DivisorReplacement>
                 {
-                    [0] = _random.String(_random.Number(1, 10))
+                    new DivisorReplacement {Divisor = 0 , ReplaceWith = _random.String(_random.Number(1, 10))}
                 };
 
-                _fizzBuzz.GetFizzBuzz(additionalRules: expectedRules);
+                _fizzBuzz.GetFizzBuzz(replacements: expectedReplacements);
             }
 
             [TestMethod]
