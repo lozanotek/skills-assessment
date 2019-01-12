@@ -1,0 +1,6 @@
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\bin\Debug\FizzzLib.dll
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\bin\Debug\FizzzLib.pdb
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\obj\Debug\FizzzLib.csprojAssemblyReference.cache
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\obj\Debug\FizzzLib.csproj.CoreCompileInputs.cache
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\obj\Debug\FizzzLib.dll
+C:\Code\skills-assessment\src\FizzBuzz\FizzzLib\obj\Debug\FizzzLib.pdb
