@@ -12,3 +12,7 @@ creating or updating SQL Stored Procedures.
 One thing I like about .NET is how Visual Studio has greatly improved and makes the development process much easier and faster
 than it was in previous versions. 
 
+<H1>Git Commands</H1>
+At Dee Zee and DLL Finance, we used DevOps and VSTS for source control.  
+DevOps has a great way of comparing your changes in a branch pull request.  Or command git diff [first branch] [second branch]
+
