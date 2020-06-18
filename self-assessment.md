@@ -16,3 +16,9 @@ than it was in previous versions.
 At Dee Zee and DLL Finance, we used DevOps and VSTS for source control.  
 DevOps has a great way of comparing your changes in a branch pull request.  Or command git diff [first branch] [second branch]
 
+<H1>Continuing Education</H1>
+I learn skills primarily through online tutorials.  I have a personal PluralSight account. I've gone through skills such as 
+Java, RESTful APIs, SQL SSIS, ASP.NET and MVC.  I also sometimes find YouTube videos that are very helpful.  
+If I need to learn something more immediate or to resolve a problem, I use Web searches from Google, Bing, or Duckduckgo.  
+I am also going through a couple books - Pro ASP.NET Core MVC 2 by Adam Freeman and Learn AngularJS in 1 Day by Krishna Rungta. 
+
