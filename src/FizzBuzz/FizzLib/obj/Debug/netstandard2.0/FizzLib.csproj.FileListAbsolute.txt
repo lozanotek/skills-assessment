@@ -1,0 +1,9 @@
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\bin\Debug\netstandard2.0\FizzLib.deps.json
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\bin\Debug\netstandard2.0\FizzLib.dll
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.csprojAssemblyReference.cache
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.AssemblyInfoInputs.cache
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.AssemblyInfo.cs
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\bin\Debug\netstandard2.0\FizzLib.pdb
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.csproj.CoreCompileInputs.cache
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.dll
+C:\Users\laura\Javier\skills-assessment\src\FizzBuzz\FizzLib\obj\Debug\netstandard2.0\FizzLib.pdb

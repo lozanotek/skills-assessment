@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IsZi9SomG2OP4qCOVkMR6hVYf+x3p/b8MU9hbtKlQiE6ygD1cmf23Aer58eE5DPCv5BFpqQDJYj46tyXx4CPUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\laura\\Javier\\skills-assessment\\src\\FizzBuzz\\FizzLib\\FizzLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\laura\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\laura\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\laura\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
